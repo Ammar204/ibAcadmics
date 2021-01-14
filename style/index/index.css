@@ -11311,4 +11311,8 @@ h1, .h1 {
   color: #edae44;
   font-weight: bold;
 }
+.text-size{
+  font-size:70%;
+  text-align:left;
+}
 /*# sourceMappingURL=index.css.map */
