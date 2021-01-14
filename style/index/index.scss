@@ -1,13 +1,59 @@
 @import "../theme.scss";
 
+.service-section{
+    .c-col-service{
+        background-color:$grey-bg;
+        height: 220px;
+    }
+    .service-card{
+        p{
+            font-size: 13px;
+            color: $black;
+            font-weight: 300;
 
+        }
+        h2{
 
-
-h1{
-    color:$secondary;
-    font-weight: bold;
+            font-weight: 600;
+            font-family: $sectionHeadingText;
+                        color: $secondary;
+        }
+        i{
+            color: $secondary;
+            transition: 0.2s ease;
+        }
+        &:hover {
+            i{
+                color:$primary;
+            }
+        }
+    }
+    .c-col-service-white{
+        background-color: $white;
+    }
 }
-.text-size{
-    font-size:70%;
-    text-align:left;
-  }
+
+
+.section-heading{
+    position: relative;
+    text-align: center;
+    height: 60px;
+    h1{
+        font-weight: 700;
+        font-family: $sectionHeadingText;
+        text-transform: uppercase;
+        *{
+            font-family: $sectionHeadingText;
+        }
+    }
+    &:before {
+        content: "";
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        background-color: $primary;
+        }
+}
