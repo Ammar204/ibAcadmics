@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
@@ -420,7 +421,20 @@
             </div>
         </form>
     </section>
-
+    <!-- counter -->
+    <section  data-aos="fade-down">
+      
+        <div class="grey-bg c-no container-fluid">
+            <div class="container">
+                <div class="row" id="counter">
+                    <div class="col-sm-4 counter-Txt"> Customers <span class="counter-value" data-count="10">0</span> Million</div>
+                    <div class="col-sm-4 counter-Txt"> Product <span class="counter-value" data-count="25">0</span> Thousand</div>
+                    <div class="col-sm-4 counter-Txt margin-bot-35"> Team <span class="counter-value" data-count="150">0</span> Peoples</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
     <footer id="footer" class="footer-1">
         <div class="main-footer widgets-dark typo-light">
             <div class="container">
@@ -520,5 +534,38 @@
 </body>
 <script>
     AOS.init();
+    var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 7000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
   </script>
 </html>
