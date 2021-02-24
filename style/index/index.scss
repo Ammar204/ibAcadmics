@@ -6,23 +6,29 @@
 .service-section{
     .c-col-service{
         background-color:$grey-bg;
-        height: 220px;
+        height: 283px;
+        @media screen and (max-width:  550px) {
+          .row{
+            --bs-gutter-x: 0 !important;
+          }
+          
+        }
     }
     .service-card{
         p{
-            font-size: 13px;
+            font-size: 15px;
             color: $black;
             font-weight: 300;
 
         }
         h2{
 
-            font-weight: 600;
-            font-family: $sectionHeadingText;
-                        color: $secondary;
+            font-weight: 400;
+            font-family: $body-text;
+                        color: $black;
         }
         i{
-            color: $secondary;
+            color: $primary;
             transition: 0.2s ease;
         }
         &:hover {
@@ -98,12 +104,176 @@
         }
     }
 }
+.video-wrapper{
+  position: relative;
+  .custom-control{
+    position: absolute;
+    top: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #4ecac2cc;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    i{
+      color: $secondary;
+    }
+  }
+}
+.high-a-heading{
+  font-weight: bold;
+  color: $primary;
+  font-size: 3.8vw;
+  text-align: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 40px;
+  
+  }
+}
+#onlineEdu{
+  width: 100%;
+  background-color :  #EDEEF1;
+  border-top: 1px solid #ddd;
+  .row{
+    background-color: #EDEEF1;
+    .step-content{
+      position: relative;
+      overflow-y: hidden;
+    
 
+     
+      .step-wrapper{
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        .step{
+            font-size: 40px;
+            background: #d91865;
+            color: #f8f9fa;
+            /* padding: 20px; */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            /* text-align: center; */
+            /* vertical-align: middle; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            font-size: 40px;
+            margin-right: 20px;
+            @media screen and (max-width:  550px) {
+              width: 80px;            
+            }
+          
+        }
+        .step-detail{
+          width: 350px;
+          h3{
+            font-weight: bold;
+          }
+          p{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    
+    }
+    #onlineBg{
+    background-image: url("../../images/online_education3.jpg");
+    width: 100%;
+height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+height: 400px;
 
+@media only screen and (max-width: 550px) {
+  height: 235px;
 
+}
+    }
+    #onlineHeading{
+      text-align: center;
+      h1{
+        font-weight: bold;
+        color: $primary;
+        font-size: 3.8vw;
+        // font-family: $heading-text;
+        @media screen and (max-width:  550px) {
+          font-size: 40px;        
+        }
+      }
+      h3{
+        font-family: $heading-text;
+        font-size: 1.8vw;
+        @media screen and (max-width:  550px) {
+          font-size: 22px;
+        }
+      }
+    }
+//   #onlineBg{
+//     background-image: url("../../images/online_education2.gif");
+// position: relative;
+// background-size: cover;
+// background-position: center;
+// background-repeat: no-repeat;
+// height: 430px;
+// // transform: rotate(372deg);
+// // -ms-transform: rotate(372deg);
+// // -webkit-transform: rotate(372deg);
+// border-left: 25px solid #edae44;
+// border-top-left-radius: 50% 50%;
+// border-bottom-left-radius: 50% 50%;//   &:before {
+// //     transform: rotate(10deg);
+// // -ms-transform: rotate(10deg);
+// // -webkit-transform: rotate(10deg);
+// // content: "";
+// // position: absolute;
+// // left: -110px;
+// // width: 500px;
+// // height: 413px;
+// // display: block;
+// // border-left: 120px solid #4ecac2;
+// // border-radius: 50%;
+// //   }
+// //   .shape {
+// //     transform: rotate(372deg);
+// // -ms-transform: rotate(372deg);
+// // -webkit-transform: rotate(372deg);
+// // border-left: 25px solid #edae44;
+// // border-radius: 50%;
+// // position: absolute;
+// // left: 0;
+// // width: 240px;
+// // height: 400px;
+// //   }
+  
+// }
+}
 
+.tes{
+  .card{
+    height: 300px;
+    margin-bottom: 20px;
+    .col-md-9{
+      height: 190px;
+      p{
+        text-align: center;
+      }
+    }
 
-
+  }
+  .tes-img{
+    width: 70px;
+    height: 70px;
+  }
+}
 
 
 
@@ -112,14 +282,14 @@
     position: relative;
     z-index: 1;
     // background-color: $primary;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../../images/index/main-banner3.jpg');
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    // background-position: center center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-image: url('../../images/index/hero1.jpg');
+  //   background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   overflow: hidden;
     .c-row{
         height: 600px;
@@ -145,6 +315,13 @@
 }
 .hero-banner-content {
     overflow: hidden;
+
+    h1,p{
+      font-family: $heading-text;
+
+    }
+
+
 }
 .hero-banner-content .sub-title {
     display: block;
@@ -172,13 +349,17 @@
     animation-delay: 1s !important;
     font-size: 58px;
     font-weight: 700;
+    @media screen and (max-width:  550px) {
+      font-size: 45px;
+    
+    }
 }
 .hero-banner-content p {
     -webkit-animation-delay: 1.7s !important;
     animation-delay: 1.7s !important;
-    color: #ffffff;
     line-height: 1.9;
-    font-size: 16px;
+    font-size: 22px;
+    color: $grey-bg;
 }
 .hero-banner-content .btn-c-box {
     margin-top: 35px;
@@ -260,7 +441,11 @@
 }
 
 
-
+.long-heading{
+  &:before {
+    bottom: -12px;
+    }
+}
 
 
 /*==================== 

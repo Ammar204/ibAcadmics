@@ -9,7 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                data: [{
+                    type: "doughnut",
+                    startAngle: 60,
+                    //innerRadius: 60,
+                    dataPoints: [
+                        { y: 64, },
+                        { y: 36, },
+
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script> -->
 </head>
 
 <body>
@@ -43,23 +62,26 @@
         <div class="c-row ">
             <div class="col-lg-6 col-md-12">
                 <div class="hero-banner-content">
-                    <span class="sub-title" data-aos="fade-down">ENJOY SMOOTH LEARNING</span>
+                    <!-- <span class="sub-title" data-aos="fade-down">ENJOY SMOOTH LEARNING</span> -->
                     <h1 data-aos="fade-down">Internal Assessments
                         IO/EE/TOK Lessons</h1>
                     <p data-aos="fade-down">With our specialized help, you get a Level 7.
+                        <br />
                         Don't wait for another unsatisfactory grade.</p>
                     <button data-aos="fade-down" class="btn btn-outline-primary">View
                         Courses </button>
 
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div data-aos="fade-left" class="hero-banner-image text-center">
-                    <img src="images/index/banner-img1.jpg" style="width: 580px;" alt="image">
-                </div>
-            </div>
+            <!-- <div class="col-lg-6 col-md-12">
+                    <div data-aos="fade-left" class="hero-banner-image text-center">
+                        <img src="images/index/banner-img1.jpg" style="width: 580px;" alt="image">
+                    </div>
+                </div> -->
         </div>
     </div>
+
+
 
     <!-- <section class="header ">
         <div class="content-container">
@@ -77,9 +99,10 @@
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service  px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="fas fa-graduation-cap fa-3x py-2"></i>
                     <h2> Elite Tutors </h2>
-                    <p class="text-center">At IBA, we take pride in our Experts. All of our tutors are top university
+                    <p class="text-center mt-2">At IBA, we take pride in our Experts. All of our tutors are top
+                        university
                         graduates with minimum
                         3+ years of experience in teaching the IB curriculum.</p>
                 </div>
@@ -87,9 +110,9 @@
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service c-col-service-white px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="fas fa-user fa-3x py-2"></i>
                     <h2> Community </h2>
-                    <p class="text-center">Over the years, our students have secured spots at world renowned
+                    <p class="text-center mt-2">Over the years, our students have secured spots at world renowned
                         institutions. We stay here, working harder every day, knowing that our students are fully
                         equipped to become future scholars and leaders.</p>
                 </div>
@@ -97,9 +120,10 @@
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service  px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="far fa-edit fa-3x py-2"></i>
                     <h2> Study Resources </h2>
-                    <p class="text-center">Knowledge comes in all shapes and forms and we have figured it all for you.
+                    <p class="text-center mt-2">Knowledge comes in all shapes and forms and we have figured it all for
+                        you.
                         From topic notes, exam questions to Level 7 sample essays and video materials, we are willing to
                         dispose all our resources in order to guarantee success.</p>
                 </div>
@@ -108,18 +132,20 @@
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service c-col-service-white px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="fa fa-key fa-3x py-2"></i>
                     <h2> Effective </h2>
-                    <p class="text-center">We know that 70% of what is taught in class is only tested in 30% of the exam
+                    <p class="text-center mt-2">We know that 70% of what is taught in class is only tested in 30% of the
+                        exam
                         questions, hence we have fine tuned our tutorials to help save your time.</p>
                 </div>
             </div>
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service  px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="far fa-snowflake fa-3x py-2"></i>
                     <h2> Stress Free </h2>
-                    <p class="text-center">IB can be hard on the spirits. However, the best learning happens when its
+                    <p class="text-center mt-2">IB can be hard on the spirits. However, the best learning happens when
+                        its
                         actually fun. That is precisely why our tutors encourage stimulating conversations so that you
                         can enjoy your way to success.</p>
                 </div>
@@ -127,18 +153,17 @@
             <div
                 class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-start justify-content-center c-col-service c-col-service-white px-5">
                 <div class="service-card d-flex flex-column justify-content-center align-items-center py-3">
-                    <i class="fas fa-user fa-2x py-1"></i>
+                    <i class="far fa-check-square fa-3x py-2"></i>
                     <h2> Predicted Level 7 </h2>
-                    <p class="text-center">Our IA specialists are trained specifically to help you secure a Level 7
+                    <p class="text-center mt-2">Our IA specialists are trained specifically to help you secure a Level 7
                         predicted grade with minimum time investment.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- our team -->
-    <section class="container-fluid">
+    <!-- <section class="container-fluid">
         <div data-aos="fade-down" class="section-heading my-5">
             <h1>OUR <span class="text-primary">TEAM</span> </h1>
         </div>
@@ -224,117 +249,337 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <!-- chart -->
+    <section class="container my-5">
+        <div class="row">
+            <div data-aos="fade-down" class="section-heading my-5 long-heading">
+                <h1>Performance <span class="text-primary">statistics</span> </h1>
+            </div>
+            <div class="row ">
+
+                <div class="d-flex justify-content-start align-items-center col-lg-4 mb-5">
+                    <div>
+                        <img src="images/charts/64.png" loading="lazy" alt="level 6 or above" width="135px" />
+                    </div>
+                    <div class="mx-3">
+                        <h2 class="m-0 text-primary">84%</h2>
+                        <p class="m-0 text-muted">Level 6 or above</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start mb-5 align-items-center col-lg-4">
+                    <div>
+                        <img src="images/charts/92.png" loading="lazy" alt="top uk admission offers" width="135px" />
+                    </div>
+                    <div class="mx-3">
+                        <h2 class="m-0 text-primary">92%</h2>
+                        <p class="m-0 text-muted">Top UK <br />admission offers</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center col-lg-4 mb-5">
+                    <div>
+                        <img src="images/charts/78.png" loading="lazy" alt="ib score" width="135px" />
+                    </div>
+                    <div class="mx-3">
+                        <h2 class="m-0 text-primary">87%</h2>
+                        <p class="m-0 text-muted">IB Score 39+</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
+    <!-- onnline education  -->
+    <section class="container-fluid  mb-3 pt-4 pb-3" id='onlineEdu'>
+        <!-- <div data-aos="fade-down" class="section-heading my-5">
+                <h1>2020 </h1>
+            </div> -->
+        <div id="onlineHeading">
+            <h1>Online tuition that raises grades</h1>
+            <h3>Lessons to fit your schedule, from the comfort of home</h3>
+        </div>
+        <div id="onlineBg"> </div>
+        <div class="row">
+            <div class="step-content row  pt-5 justify-content-around">
+
+                <div class="step-wrapper col-lg-4 col-md-12">
+                    <div class="step">
+                        1
+                    </div>
+                    <div class="step-detail">
+                        <h3>Schedule a trial lesson</h3>
+                        <p> Tell us about your goals for particular subjects and assessments. </p>
+                    </div>
+                </div>
+                <div class="step-wrapper col-lg-4 col-md-12">
+                    <div class="step">
+                        2
+                    </div>
+                    <div class="step-detail">
+                        <h3>Meet your tutor on zoom</h3>
+                        <p> Our tutor will go through the given topic/assessment with you and demonstrate their
+                            knowledge.</p>
+                    </div>
+                </div>
+                <div class="step-wrapper col-lg-4 col-md-12">
+                    <div class="step">
+                        3
+                    </div>
+                    <div class="step-detail">
+                        <h3>Design a study plan </h3>
+                        <p>Book regular slots that will be sufficient to achieve the target. All from the comfort of
+                            home. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-6" id="onlineBg">
+                    <div class="shape"></div>
+                </div> -->
+
+        </div>
+    </section>
+    <!-- High achiever -->
+    <section class="container-fluid my-5">
+        <h1 class="high-a-heading my-4">2020 High Achievers</h1>
+        <div class="d-flex justify-content-center">
+            <iframe width="1000" height="562" src="https://www.youtube.com/embed/NCpMEIf3iOs" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- about us -->
+    <section class="container my-5">
+        
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                <div data-aos="fade-down" class="section-heading my-5">
+                    <h1>About <span class="text-primary">US </span></h1>
+                </div>
+                <p class="w-75 text-center">We are a team of IB experts who want to provide specialised help to students
+                    taking the International Baccalaureate diploma. We have helped hundreds of IB students achieve their
+                    target scores and get into their dream universities. This has been possible through development of
+                    teaching techniques revolving around the IB syllabus specifically. Our team is particularly trained
+                    to master the IB subject and exam strategies to boost grades.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                <div data-aos="fade-down" class="section-heading my-5">
+                    <h1>OUR <span class="text-primary">MISSION</span> </h1>
+                </div>
+                <p class="w-75 text-center">We are dedicated to support IB students who are aiming for admission in a
+                    top tier university. We
+                    have time and time again enabled our students achieve their IB goals. Our IB tutors have developed
+                    high level IB courses. We cover the International Baccalaureate syllabus and IB past papers.
+                </p>
+            </div>
+
+
+        </div>
+
+    </section>
+    
     <!-- testimonial -->
-    <section class="container">
+    <section class="container-fluid my-5">
         <div data-aos="fade-down" class="section-heading my-5">
             <h1>Testimonials </h1>
         </div>
         <div data-aos="fade-down" class="row align-items-start">
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 px-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3 ">
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes1.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>My teacher guided me to a Level 7 in English Lang Lit (HL) IO and Written Task
+                                Assessments.<span class="text-bg-primary"> Mr. Uzair was always optimistic and instilled
+                                    confidence </span> in me to get into my dream university.</p>
+                            <p class="card-text"><small class="text-secondary">Candice, KCIS </small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 ps-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3">
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes2.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>Mr. Uzair was a wonderful IB English lit HL tutor. He helped me structure <span
+                                    class="text-bg-primary">my thoughts into coherent essays </span>and always made sure
+                                that I fully understood </p>
+                            <p class="card-text"><small class="text-secondary">Nikhita KGV </small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 ps-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3 ">
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes3.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>Tutor was able to teach the critical thinking skills that are vital to <span
+                                    class="text-bg-primary"> dissecting an english literature piece </span>and to
+                                further diving into the deeper ideas present in the piece.</p>
+                            <p class="card-text">
+                                <small class="text-secondary">Angel, LPC </small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 px-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3">
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes4.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 ps-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3 ">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p><span class="text-bg-primary">Uzair is a great teacher</span>, who was able to teach me
+                                the finer points of IB English and I would highly recommend him as your IB English
+                                tutor.</p>
+                            <p class="card-text">
+                                <small class="text-secondary">Karaan, SIS
+                                </small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1 col-md-6 col-lg-4">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4 ps-1" style="width: 100px;">
-                            <img src="/images/our team/testPic.jpeg" class="img-fluid  rounded-circle  mt-3 ">
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes5.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p style="font-size: 13px; margin:0">This is a wider card with <span
-                                        class="text-bg-primary"> supporting text below as a natural
-                                        lead-in to </span>
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-secondary">faheem khan</small></p>
-                            </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>I would like to thank my teachers Mr. Uzair and Mr.Areeb for helping me <span
+                                    class="text-bg-primary"> improve in english and mathematics</span>.I was able to get
+                                Level 6 and Level 7 within 6
+                                months of tutoring. </p>
+                            <p class="card-text">
+                                <small class="text-secondary">Chloe, RCHK
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes6.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>I went to IB Academics for one year and my tutors helped me secure the predicted grades
+                                <span class="text-bg-primary">I needed to get into HKU and UK universities.</span> They
+                                were patient and exceeded my expectations. </p>
+                            <p class="card-text">
+                                <small class="text-secondary">Lucinda, SPCC
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes7.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>Uzair was a really helpful <span class="text-bg-primary">when it came
+                                    to constructing points and arguments in an exam paper scenario, and methodically
+                                    goes through</span> what should be done.</p>
+                            <p class="card-text">
+                                <small class="text-secondary">Trinity, Creative Secondary
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes9.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p> I have to say their tutors really know how to complete the <span
+                                    class="text-bg-primary">IAs and TOK in a
+                                    short period of time</span> and still get 90% + marks.</p>
+                            <p class="card-text">
+                                <small class="text-secondary">George, Discovery College
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes8.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>I joined the lessons at Ib academics in my second year of IB after my friends who were
+                                already going there started to <span class="text-bg-primary">improve their predicted
+                                    grades.</span>
+                            <p class="card-text">
+                                <small class="text-secondary">Colson, SPCC
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes10.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p><span class="text-bg-primary">IB Academics </span>is the best tutor source in hong kong
+                                by far
+                            </p>
+                            <p class="card-text">
+                                <small class="text-secondary">Trisha, WIS
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes11.png" loading="lazy" alt="testmonial" class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>My tutors really helped me boost the grades. <span class="text-bg-primary">I got 7s for
+                                    all my HLs</span>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-secondary">Daisy, CDNIS
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 tes">
+                <div class="card">
+                    <div class="row flex-column align-items-center justify-content-center py-2 g-0">
+                        <div class="col-md-3 tes-img mb-4">
+                            <img src="/images/test-pics/tes12.png" loading="lazy" alt="testmonial"  class="img-fluid  rounded-circle   ">
+                        </div>
+                        <div class="col-md-9 d-flex flex-column justify-content-between">
+                            <p>My tutor helped me with my personal statement which helped me <span
+                                    class="text-bg-primary">secure an offer from Durham</span>
+                            </p>
+                            <p class="card-text">
+                                <small class="text-secondary">Albert, FIS
+                                </small></p>
                         </div>
                     </div>
                 </div>
@@ -348,94 +593,56 @@
             <h1>Contact <span class="text-primary">us</span> </h1>
         </div>
         <form data-aos="fade-down" class="row g-3 needs-validation container mx-auto" novalidate>
-            <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
             </div>
-            <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Email</label>
                 <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="text" class="form-control" id="validationCustomUsername"
                         aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
-                        Please choose a username.
+                        Please enter a email.
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
+                <label for="exampleFormControlSelect1" class="form-label">Select your subject</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>TOK</option>
+                    <option>IGCSE</option>
+                    <option>SAT</option>
+                    <option>A-Level</option>
+                    <option>IB Chinese Tutor</option>
+                    <option>IB Buisness Tutor</option>
+                    <option>IB Chemistry Tutor</option>
+                    <option>IB Economic Tutor</option>
+                    <option>IB Bio Tutor</option>
+                    <option>IB Physics Tutor</option>
+                    <option>IB Math Tutor</option>
+                    <option>IB English Tutor</option>
                 </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Phone</label>
                 <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
             </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Course</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
+            <div class="col-md-6">
+                <label for="validationCustom06" class="form-label">Date</label>
+                <input type="text" class="form-control" id="validationCustom06" required>
             </div>
-            <div class="col-md-9">
-                <label for="validationCustom05" class="form-label">Subjects</label>
-                <input type="text" class="form-control" id="validationCustom05" required
-                    placeholder="please separete with ','">
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-            <div class="mb-12">
-                <label for="exampleFormControlTextarea1" class="form-label">Comments & Query</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="col-md-6">
+                <label for="validationCustom07" class="form-label">Time</label>
+                <input type="text" class="form-control" placeholder="eg: 2:30pm" id="validationCustom07" required>
             </div>
             <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit">Book a Trial</button>
             </div>
         </form>
     </section>
-    <!-- counter -->
-    <section  data-aos="fade-down">
-      
-        <div class="grey-bg c-no container-fluid">
-            <div class="container">
-                <div class="row" id="counter">
-                    <div class="col-sm-4 counter-Txt"> Customers <span class="counter-value" data-count="10">0</span> Million</div>
-                    <div class="col-sm-4 counter-Txt"> Product <span class="counter-value" data-count="25">0</span> Thousand</div>
-                    <div class="col-sm-4 counter-Txt margin-bot-35"> Team <span class="counter-value" data-count="150">0</span> Peoples</div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- footer -->
-    <footer id="footer" class="footer-1">
+    <!-- <footer id="footer" class="footer-1">
         <div class="main-footer widgets-dark typo-light">
             <div class="container">
                 <div class="row">
@@ -525,47 +732,17 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
 <script>
     AOS.init();
-    var a = 0;
-$(window).scroll(function() {
+</script>
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.counter-value').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-
-        {
-
-          duration: 7000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
-
-        });
-    });
-    a = 1;
-  }
-
-});
-
-  </script>
 </html>
