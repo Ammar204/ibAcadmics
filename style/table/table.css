@@ -49,7 +49,18 @@
     border:0;
     background:none;
   }
+
+  .bg-tablePrimary {
+    border-top:3px solid #4ecac2;
+  }
+  .bg-tableSecondary {
+    border-top:3px solid #edae44;
+  }
   
+  thead{font-size: 25px;}
+  tbody{font-size: 20px;}
+
+  tbody .side-heading{font-weight: bold;}
   @media (min-width: 640px) {
     ul {
       display:none;

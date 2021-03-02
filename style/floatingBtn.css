@@ -1,0 +1,37 @@
+
+.whatapp {
+    background-color: #04bc0f;
+}
+
+.wechat {
+    background-color: #0e7c0e;
+}
+.floatphone {
+    background-color: #007080;
+}
+.floatemail {
+    background-color: #93549b;
+}
+
+
+
+#floatingBtnSection{
+    position: fixed;
+    z-index: 1000;
+    width: 50px;
+    top: 200px;
+    right: 10px;
+}
+
+#floatingBtnSection div{
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
