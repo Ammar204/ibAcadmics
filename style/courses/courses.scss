@@ -1,0 +1,60 @@
+@import "../theme.scss";
+
+
+// different bg for heros
+.chem-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/chemistry/chemistry-hero.jpg');
+}
+
+.hero-banner{
+    background-color: $primary;
+    width: 100%;
+    height: 600px;
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    position: relative;
+    .hero-banner-content{
+        h1{
+            font-family: 'Michroma', sans-serif;
+            font-weight: 900;
+            color: $primary;
+            font-size: 5.5vw;
+        }
+        p{
+            font-size: 1.8vw;
+            color: #fff;
+            line-height: 45px;
+            letter-spacing: 3.5px;
+        }
+    }
+}
+
+.section-head-wrapper{
+    h2{
+        font-family: $heading-text;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3.2vw;
+        letter-spacing: 5px;
+    }
+    p{
+        font-size: 2vw;
+    }
+}
+
+.ques-section{
+    .row{
+        .icon{
+            color: $secondary;
+        }
+        .ques{
+            h2{
+                font-size: 2.5vw;
+            }
+            p{
+                font-size: 1.5vw;
+            }
+        }
+    }
+}

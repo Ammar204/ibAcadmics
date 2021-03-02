@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11466,11 +11467,25 @@ body {
   color: #edae44;
 }
 
+.chart-row p {
+  font-size: 24px;
+}
+
+.chart-row h2, .chart-row .h2 {
+  font-size: 3rem;
+}
+
 .high-a-heading {
   font-weight: bold;
   color: #4ecac2;
-  font-size: 3.8vw;
+  font-size: 3.4vw;
   text-align: center;
+  font-family: 'Michroma', sans-serif;
+}
+
+.high-a-heading span {
+  color: #222;
+  font-family: 'Michroma', sans-serif;
 }
 
 @media only screen and (max-width: 550px) {
@@ -11483,6 +11498,7 @@ body {
   width: 100%;
   background-color: #EDEEF1;
   border-top: 1px solid #ddd;
+  height: 93vh;
 }
 
 #onlineEdu .row {
@@ -11543,17 +11559,16 @@ body {
 }
 
 #onlineEdu .row .step-content .step-wrapper .step-detail p {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 #onlineEdu #onlineBg {
   background-image: url("../../images/online_education3.jpg");
   width: 100%;
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 400px;
+  height: 41vh;
 }
 
 @media only screen and (max-width: 550px) {
@@ -11611,6 +11626,7 @@ body {
   height: 600px;
   position: relative;
   z-index: 1;
+  background-color: #4ecac2;
   background-image: url("../../images/index/hero1.jpg");
   overflow: hidden;
 }
