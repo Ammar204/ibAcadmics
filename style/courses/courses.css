@@ -11392,6 +11392,10 @@ fieldset:disabled .btn {
   letter-spacing: 3.5px;
 }
 
+.hero-banner .text-size-md {
+  font-size: 22px;
+}
+
 @media screen and (max-width: 550px) {
   .hero-banner .hero-banner {
     background-size: inherit;
