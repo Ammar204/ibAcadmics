@@ -1,10 +1,15 @@
 @import "../theme.scss";
 
-
+//
 // different bg for heros
 .chem-bg{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/chemistry/chemistry-hero.jpg');
 }
+
+.bio-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/biology/biology-hero.jpg');
+}
+
 
 .hero-banner{
     background-color: $primary;
@@ -22,7 +27,7 @@
             font-size: 5.5vw;
         }
         p{
-            font-size: 1.8vw;
+            font-size: 1.6vw;
             color: #fff;
             line-height: 45px;
             letter-spacing: 3.5px;
@@ -36,25 +41,77 @@
         font-weight: bold;
         text-transform: uppercase;
         font-size: 3.2vw;
-        letter-spacing: 5px;
     }
     p{
+        font-family: $heading-text;
         font-size: 2vw;
     }
 }
 
 .ques-section{
+    .section-head-wrapper {
+        margin-bottom: 4.6rem ;
+    }
     .row{
         .icon{
             color: $secondary;
         }
         .ques{
             h2{
-                font-size: 2.5vw;
+                font-size: 2.6vw;
             }
             p{
-                font-size: 1.5vw;
+                
+                font-size: 1.7vw;
             }
         }
+    }
+}
+
+.teacher-section{
+    .best-tutor-card{
+        border: 0px !important;
+        .card-img-top{
+            width: 60%;
+        }
+    }
+}
+
+.service-section{
+    .c-col-service{
+        background-color:$grey-bg;
+        height: 283px;
+        @media screen and (max-width:  550px) {
+          .row{
+            --bs-gutter-x: 0 !important;
+          }
+          
+        }
+    }
+    .service-card{
+        p{
+            font-size: 15px;
+            color: $black;
+            font-weight: 300;
+
+        }
+        h2, h3{
+
+            font-weight: 400;
+            font-family: $body-text;
+                        color: $black;
+        }
+        i{
+            color: $primary;
+            transition: 0.2s ease;
+        }
+        &:hover {
+            i{
+                color:$primary;
+            }
+        }
+    }
+    .c-col-service-white{
+        background-color: $white;
     }
 }

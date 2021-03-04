@@ -43,29 +43,7 @@
 }
 
 
-.section-heading{
-    position: relative;
-    text-align: center;
-    height: 60px;
-    h1{
-        font-weight: 700;
-        font-family: $sectionHeadingText;
-        text-transform: uppercase;
-        *{
-            font-family: $sectionHeadingText;
-        }
-    }
-    &:before {
-        content: "";
-        width: 100px;
-        height: 2px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        background-color: $primary;
-        }
-}
+
 .social-Logo{
     width: 30px;
     margin-Left:20px;
@@ -273,23 +251,7 @@ height: 41vh;
 // }
 }
 
-.tes{
-  .card{
-    height: 300px;
-    margin-bottom: 20px;
-    .col-md-9{
-      height: 190px;
-      p{
-        text-align: center;
-      }
-    }
-
-  }
-  .tes-img{
-    width: 70px;
-    height: 70px;
-  }
-}
+//
 
 
 

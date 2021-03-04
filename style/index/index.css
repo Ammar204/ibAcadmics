@@ -11312,8 +11312,50 @@ fieldset:disabled .btn {
           box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+.section-heading {
+  position: relative;
+  text-align: center;
+  height: 60px;
+}
+
+.section-heading h1, .section-heading .h1 {
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-heading h1 *, .section-heading .h1 * {
+  font-family: "Jura", sans-serif;
+}
+
+.section-heading:before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: #4ecac2;
+}
+
+.tes .card {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.tes .card .col-md-9 {
+  height: 190px;
+}
+
+.tes .card .col-md-9 p {
+  text-align: center;
+}
+
+.tes .tes-img {
+  width: 70px;
+  height: 70px;
 }
 
 .text-bg-primary {
@@ -11356,34 +11398,6 @@ body {
 
 .service-section .c-col-service-white {
   background-color: #ffffff;
-}
-
-.section-heading {
-  position: relative;
-  text-align: center;
-  height: 60px;
-}
-
-.section-heading h1, .section-heading .h1 {
-  font-weight: 700;
-  font-family: "Jura", sans-serif;
-  text-transform: uppercase;
-}
-
-.section-heading h1 *, .section-heading .h1 * {
-  font-family: "Jura", sans-serif;
-}
-
-.section-heading:before {
-  content: "";
-  width: 100px;
-  height: 2px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 0;
-  background-color: #4ecac2;
 }
 
 .social-Logo {
@@ -11602,24 +11616,6 @@ body {
   #onlineEdu #onlineHeading h3, #onlineEdu #onlineHeading .h3 {
     font-size: 22px;
   }
-}
-
-.tes .card {
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-.tes .card .col-md-9 {
-  height: 190px;
-}
-
-.tes .card .col-md-9 p {
-  text-align: center;
-}
-
-.tes .tes-img {
-  width: 70px;
-  height: 70px;
 }
 
 .hero-banner {

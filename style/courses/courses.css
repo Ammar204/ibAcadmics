@@ -11312,13 +11312,60 @@ fieldset:disabled .btn {
           box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
+.section-heading {
+  position: relative;
+  text-align: center;
+  height: 60px;
+}
+
+.section-heading h1, .section-heading .h1 {
+  font-weight: 700;
+  font-family: "Jura", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-heading h1 *, .section-heading .h1 * {
+  font-family: "Jura", sans-serif;
+}
+
+.section-heading:before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: #4ecac2;
+}
+
+.tes .card {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.tes .card .col-md-9 {
+  height: 190px;
+}
+
+.tes .card .col-md-9 p {
+  text-align: center;
+}
+
+.tes .tes-img {
+  width: 70px;
+  height: 70px;
 }
 
 .chem-bg {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/courses/chemistry/chemistry-hero.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/courses/chemistry/chemistry-hero.jpg");
+}
+
+.bio-bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/courses/biology/biology-hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/courses/biology/biology-hero.jpg");
 }
 
 .hero-banner {
@@ -11339,7 +11386,7 @@ body {
 }
 
 .hero-banner .hero-banner-content p {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   color: #fff;
   line-height: 45px;
   letter-spacing: 3.5px;
@@ -11350,11 +11397,15 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3.2vw;
-  letter-spacing: 5px;
 }
 
 .section-head-wrapper p {
+  font-family: "Jura", sans-serif;
   font-size: 2vw;
+}
+
+.ques-section .section-head-wrapper {
+  margin-bottom: 4.6rem;
 }
 
 .ques-section .row .icon {
@@ -11362,10 +11413,55 @@ body {
 }
 
 .ques-section .row .ques h2, .ques-section .row .ques .h2 {
-  font-size: 2.5vw;
+  font-size: 2.6vw;
 }
 
 .ques-section .row .ques p {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
+}
+
+.teacher-section .best-tutor-card {
+  border: 0px !important;
+}
+
+.teacher-section .best-tutor-card .card-img-top {
+  width: 60%;
+}
+
+.service-section .c-col-service {
+  background-color: #ededed;
+  height: 283px;
+}
+
+@media screen and (max-width: 550px) {
+  .service-section .c-col-service .row {
+    --bs-gutter-x: 0 !important;
+  }
+}
+
+.service-section .service-card p {
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+}
+
+.service-section .service-card h2, .service-section .service-card .h2, .service-section .service-card h3, .service-section .service-card .h3 {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+
+.service-section .service-card i {
+  color: #4ecac2;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.service-section .service-card:hover i {
+  color: #4ecac2;
+}
+
+.service-section .c-col-service-white {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=courses.css.map */
