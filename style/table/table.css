@@ -1,79 +1,99 @@
 * {
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-     outline: 0;
-  }
-  body { 
-    font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size:14px;
-    padding:14px;
-  }
-  article {
-    width:100%;
-    max-width:1000px;
-    margin:0 auto;
-    height:1000px;
-    position:relative;
-  }
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+   outline: 0;
+}
+body { 
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:14px;
+  padding:14px;
+}
+article {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  height:1000px;
+  position:relative;
+}
+ul {
+  display:flex;
+  top:0px;
+  z-index:10;
+  padding-bottom:14px;
+}
+li {
+  list-style:none;
+  flex:1;
+}
+li:last-child {
+  border-right:1px solid #DDD;
+}
+/* table */
+table { border-collapse:collapse; table-layout:fixed; width:100%; }
+/* table heading bg color */
+th { background:#F5F5F5}
+/* table height */
+td, th {
+  height:53px
+}
+/* genrating table border */
+td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+/* tick cell */
+td+td, th+th {
+  text-align:center;
+  /* display:; */
+}
+/* hiding first cell */
+.hide {       
+  border:0;
+  background:none;
+}
+
+.bg-tablePrimary {
+  border-top:3px solid #4ecac2;
+}
+.bg-tableSecondary {
+  border-top:3px solid #edae44;
+}
+
+thead{font-size: 25px;}
+tbody{font-size: 20px;}
+
+tbody .side-heading{font-weight: bold;}
+@media (min-width: 640px) {
   ul {
-    display:flex;
-    top:0px;
-    z-index:10;
-    padding-bottom:14px;
-  }
-  li {
-    list-style:none;
-    flex:1;
-  }
-  li:last-child {
-    border-right:1px solid #DDD;
-  }
-  /* table */
-  table { border-collapse:collapse; table-layout:fixed; width:60%; margin: 0% 20%;}
- /* table heading bg color */
-  th { background:#F5F5F5; display:none; text-align: center; }
-  /* table height */
-  td{
-    height:53px;
-    text-align: justify;
-  }
-  /* genrating table border */
-  td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
-  /* tick cell */
-  td+td{
-    text-align:justify;
     display:none;
   }
-  /* hiding first cell */
-  .hide {       
-    border:0;
-    background:none;
+  td,th {
+    display:table-cell !important;
   }
+  td,th {
+    width: 330px;
+  }
+  td+td, th+th {
+    width: auto;
+  }
+}
 
-  .bg-tablePrimary {
-    border-top:3px solid #4ecac2;
+@media only screen and (max-width: 550px) {
+  ul {
+    display:none;
   }
-  .bg-tableSecondary {
-    border-top:3px solid #edae44;
+  td,th {
+    display:table-cell !important;
   }
-  
-  thead{font-size: 25px;}
-  tbody{font-size: 20px;}
+  td,th {
+    width: 110px;
+  }
+  td+td, th+th {
+    width: auto;
+  }
+  thead {
+    font-size: 15px;
+}
+tbody {
+  font-size: 12px;
+}
+}
 
-  tbody .side-heading{font-weight: bold;}
-  @media (min-width: 640px) {
-    ul {
-      display:none;
-    }
-    td,th {
-      display:table-cell !important;
-    }
-    td,th {
-      width: 330px;
-    
-    }
-    td+td, th+th {
-      width: auto;
-    }
-  }

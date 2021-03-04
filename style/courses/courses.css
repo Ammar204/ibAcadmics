@@ -11392,20 +11392,32 @@ fieldset:disabled .btn {
   letter-spacing: 3.5px;
 }
 
-.section-head-wrapper h2, .section-head-wrapper .h2 {
+@media screen and (max-width: 550px) {
+  .hero-banner .hero-banner {
+    background-size: inherit;
+  }
+  .hero-banner .hero-banner-content h1, .hero-banner .hero-banner-content .h1 {
+    font-size: 45px;
+  }
+  .hero-banner .hero-banner-content p {
+    font-size: 24px;
+  }
+}
+
+.ques-section .section-head-wrapper {
+  margin-bottom: 4.6rem;
+}
+
+.ques-section .section-head-wrapper h2, .ques-section .section-head-wrapper .h2 {
   font-family: "Jura", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3.2vw;
 }
 
-.section-head-wrapper p {
+.ques-section .section-head-wrapper p {
   font-family: "Jura", sans-serif;
   font-size: 2vw;
-}
-
-.ques-section .section-head-wrapper {
-  margin-bottom: 4.6rem;
 }
 
 .ques-section .row .icon {
@@ -11418,6 +11430,33 @@ fieldset:disabled .btn {
 
 .ques-section .row .ques p {
   font-size: 1.7vw;
+}
+
+@media screen and (max-width: 550px) {
+  .ques-section .section-head-wrapper h2, .ques-section .section-head-wrapper .h2 {
+    font-size: 24px;
+  }
+  .ques-section .section-head-wrapper p {
+    font-size: 20px;
+  }
+  .ques-section .row .justify-content-end {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .ques-section .row .justify-content-end .fa-5x {
+    font-size: 3.5em;
+  }
+  .ques-section .row .ques {
+    margin-top: 20px;
+  }
+  .ques-section .row .ques h2, .ques-section .row .ques .h2 {
+    font-size: 20px;
+  }
+  .ques-section .row .ques p {
+    font-size: 17px;
+    width: 100% !important;
+  }
 }
 
 .teacher-section .best-tutor-card {
