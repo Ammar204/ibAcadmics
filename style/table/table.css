@@ -30,18 +30,19 @@
     border-right:1px solid #DDD;
   }
   /* table */
-  table { border-collapse:collapse; table-layout:fixed; width:100%; }
+  table { border-collapse:collapse; table-layout:fixed; width:60%; margin: 0% 20%;}
  /* table heading bg color */
-  th { background:#F5F5F5; display:none; }
+  th { background:#F5F5F5; display:none; text-align: center; }
   /* table height */
-  td, th {
-    height:53px
+  td{
+    height:53px;
+    text-align: justify;
   }
   /* genrating table border */
   td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
   /* tick cell */
-  td+td, th+th {
-    text-align:center;
+  td+td{
+    text-align:justify;
     display:none;
   }
   /* hiding first cell */
