@@ -38,9 +38,9 @@ td, th {
   height:53px
 }
 /* genrating table border */
-td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+td{ border:1px solid #DDD; padding:10px; empty-cells:show; text-align: left;}
 /* tick cell */
-td+td, th+th {
+th+th {
   text-align:center;
   /* display:; */
 }
