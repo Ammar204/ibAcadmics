@@ -11558,6 +11558,10 @@ body {
   list-style: disclosure-closed !important;
 }
 
+.bullet-list li.nested {
+  list-style: disc !important;
+}
+
 .bullet-list li.tutor {
   list-style: disc !important;
   font-size: 18px;
