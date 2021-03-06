@@ -11312,6 +11312,10 @@ fieldset:disabled .btn {
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .section-heading {
   position: relative;
   text-align: center;
@@ -11368,6 +11372,16 @@ fieldset:disabled .btn {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/courses/biology/biology-hero.jpg");
 }
 
+.math-bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/courses/math/math-hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/courses/math/math-hero.jpg");
+}
+
+.phy-bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/courses/physics/physics-hero.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/courses/physics/physics-hero.jpg");
+}
+
 .hero-banner {
   background-color: #4ecac2;
   width: 100%;
@@ -11392,10 +11406,6 @@ fieldset:disabled .btn {
   letter-spacing: 3.5px;
 }
 
-.hero-banner .text-size-md {
-  font-size: 22px;
-}
-
 @media screen and (max-width: 550px) {
   .hero-banner .hero-banner {
     background-size: inherit;
@@ -11406,6 +11416,10 @@ fieldset:disabled .btn {
   .hero-banner .hero-banner-content p {
     font-size: 24px;
   }
+}
+
+.text-size-md {
+  font-size: 22px !important;
 }
 
 .ques-section .section-head-wrapper {
@@ -11468,7 +11482,7 @@ fieldset:disabled .btn {
 }
 
 .teacher-section .best-tutor-card .card-img-top {
-  width: 60%;
+  width: 32%;
 }
 
 .service-section .c-col-service {
@@ -11506,5 +11520,28 @@ fieldset:disabled .btn {
 
 .service-section .c-col-service-white {
   background-color: #ffffff;
+}
+
+.text-bg-primary {
+  background-color: #4ecac259;
+  font-weight: bold;
+}
+
+.custom-list .bullet {
+  font-size: 49px;
+  color: #edae44;
+}
+
+.custom-list .point {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.margin-less {
+  margin-top: -45px;
+}
+
+.service-section .service-card p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=courses.css.map */
