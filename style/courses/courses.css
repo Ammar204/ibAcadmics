@@ -11485,6 +11485,10 @@ body {
   width: 32%;
 }
 
+.teacher-section .best-tutor-card .card-body {
+  padding: 0px !important;
+}
+
 .service-section .c-col-service {
   background-color: #ededed;
   height: 283px;
@@ -11533,7 +11537,7 @@ body {
 }
 
 .custom-list .point {
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
@@ -11543,5 +11547,28 @@ body {
 
 .service-section .service-card p {
   font-size: 20px;
+}
+
+.bullet-list {
+  display: list-item !important;
+  list-style: none !important;
+}
+
+.bullet-list li.arrow {
+  list-style: disclosure-closed !important;
+}
+
+.bullet-list li.tutor {
+  list-style: disc !important;
+  font-size: 18px;
+}
+
+.bullet-list li.tutor::marker {
+  color: #edae44;
+  /* or whatever color you prefer */
+}
+
+.jura-text {
+  font-family: "Jura", sans-serif;
 }
 /*# sourceMappingURL=courses.css.map */

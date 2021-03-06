@@ -125,6 +125,9 @@
         .card-img-top{
             width: 32%;
         }
+        .card-body{
+            padding: 0px !important;
+        }
     }
 }
 
@@ -176,7 +179,7 @@
         color: $secondary;
     }
     .point{
-        font-size: 18px;
+        font-size: 16px;
         vertical-align: middle;
     }
 }
@@ -187,4 +190,23 @@
 
 .service-section .service-card p{
     font-size: 20px;
+}
+
+.bullet-list{
+    display: list-item !important;
+    list-style: none !important;
+    li.arrow{
+        list-style: disclosure-closed !important;
+    }
+    li.tutor{
+        list-style: disc !important;
+        font-size: 18px;
+    }
+    li.tutor::marker {
+        color: $secondary; /* or whatever color you prefer */
+      }
+}
+
+.jura-text{
+    font-family: $heading-text;
 }
