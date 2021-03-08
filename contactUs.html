@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index/index.css" />
+    <link rel="stylesheet" href="style/contactus/contactUs.css" />
+</head>
+
+<body>
+    <section class="pt-1 pb-5 bg-light">
+        <div class="section-heading my-3 ">
+            <h1>Contact <span class="text-primary">us</span> </h1>
+        </div>
+
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <div class="row" style="margin-top: 5%;">
+            <form class=" needs-validation container mx-auto col-sm-4" novalidate>
+                <div class="col-md-10">
+                    <label for="validationCustom01" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                </div>
+                <div class="col-md-10">
+                    <label for="validationCustomUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please enter a email.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <label for="exampleFormControlSelect1" class="form-label">Select your subject</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>TOK</option>
+                        <option>IGCSE</option>
+                        <option>SAT</option>
+                        <option>A-Level</option>
+                        <option>IB Chinese Tutor</option>
+                        <option>IB Buisness Tutor</option>
+                        <option>IB Chemistry Tutor</option>
+                        <option>IB Economic Tutor</option>
+                        <option>IB Bio Tutor</option>
+                        <option>IB Physics Tutor</option>
+                        <option>IB Math Tutor</option>
+                        <option>IB English Tutor</option>
+                    </select>
+                </div>
+                <div class="col-md-10">
+                    <label for="validationCustom05" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                </div>
+                <div class="col-md-10">
+                    <label for="validationCustom06" class="form-label">Date</label>
+                    <input type="text" class="form-control" id="validationCustom06" required>
+                </div>
+                <div class="col-md-10">
+                    <label for="validationCustom07" class="form-label">Time</label>
+                    <input type="text" class="form-control" placeholder="eg: 2:30pm" id="validationCustom07" required>
+                </div>
+                <div class="col-12" style="margin-top:2%;">
+                    <button class="btn btn-primary" type="submit">Book a Trial</button>
+                </div>
+            </form>
+            <div class="col-sm-4 details">
+                <p><span class="text-primary space-arrow">></span>
+                    Telephone (weekends 9:00am - 5:00pm) <br /><span class="text-muted"> 0313782601 - General Enquiry
+                    </span>
+                    <br /><br /><span class="text-primary space-arrow ">></span> Our Postal Address<br /> <span
+                        class="text-muted"> Tutor Hunt<br /> 27-21 Lamb's Conduit
+                        Street<br /> London<br /> WC1N 3GS</span> <br /> <br /> <span
+                        class="text-primary space-arrow ">></span>Email <br />
+                    <span class="text-muted"> General Enquiries : </span> <span
+                        class="text-info">support@tuttorhunt.com</span><br /> <span class="text-muted"> for Tutor Hunt
+                        members, please use the contact form as we can validate your details
+                        quicker.<br />Press/advertising: </span> <span
+                        class="text-info">media@tuttorhunt.com</span><br /><br />
+                    <span class="text-primary space-arrow">></span>VAT Registration Number<br /> <span
+                        class="text-muted"> 130 5675 89</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                // mapTypeId: google.maps.MapTypeId.HYBRID
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+
+</html>
