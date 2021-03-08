@@ -15,9 +15,21 @@
 }
 
 .phy-bg{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/physics/physics-hero.jpg');
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../../images/courses/physics/physics-hero.jpg');
 }
 
+.eco-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/economic/economic-hero.jpg');
+}
+.eng-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url('../../images/courses/english/english-hero.jpg');
+}
+.buis-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/buisness/buisness-hero.jpg');
+}
+.tok-bg{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../images/courses/tok/tok-hero.jpg');
+}
 .hero-banner{
     background-color: $primary;
     width: 100%;
@@ -196,6 +208,8 @@
     display: list-item !important;
     list-style: none !important;
     li.arrow{
+        margin-top: 22px !important;
+
         list-style: disclosure-closed !important;
     }
     li.nested{
@@ -212,4 +226,14 @@
 
 .jura-text{
     font-family: $heading-text;
+}
+
+.essay-heading{
+    font-size: 45px;
+}
+
+
+
+.service-section .c-col-service.eco {
+    height: 325px;
 }
