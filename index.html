@@ -4,61 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | IB Acadmics</title>
     <link rel="stylesheet" href="style/index/index.css" />
+    <link rel="stylesheet" href="style/table/navbar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/floatingBtn.css" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- <script>
-        window.onload = function () {
-
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                data: [{
-                    type: "doughnut",
-                    startAngle: 60,
-                    //innerRadius: 60,
-                    dataPoints: [
-                        { y: 64, },
-                        { y: 36, },
-
-                    ]
-                }]
-            });
-            chart.render();
-
-        }
-    </script> -->
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav  mr-auto  mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+
+
+
+<!-- navbar -->
+<div class="menu">
+    <a href="/" class="logo">
+        <img src="http://www.ibacademics.com/wp-content/uploads/2019/07/LogoIBee.png"/>
+    </a>
+  <ul class="clearfix">
+	<li><a href="/">Home</a></li>
+    <li class="drop-down-wrapper"><a href="#">IB Courses</a>
+        <ul class="drop-down">
+          <li><a href="/courses/chemistry.html">IB Chemistry</a></li>
+          <li><a href="/courses/biology.html">IB Biology</a></li>
+		  <li><a href="/courses/physics.html">IB Physics</a></li>
+		  <li><a href="/courses/english.html">IB English</a></li>
+          <li><a href="/courses/buisness.html">IB Buisness</a></li>
+          <li><a href="/courses/math.html">IB Math</a></li>
+          <li><a href="/courses/economic.html">IB Economic</a></li>
+		  <li><a href="/courses/tok.html">TOK</a></li>
+
+        </ul>
+      </li>
+	  <li><a href="/contact us.html">Contact us</a></li>
+	  <li><a href="#">Resources</a></li>
+
+  </ul>
+</div>
+
+
+
+
+
     <!-- header -->
 
     <div class="hero-banner container-fluid">
@@ -265,9 +255,6 @@
     
     <!-- onnline education  -->
     <section class="container-fluid  mb-3 pt-4 pb-3" id='onlineEdu'>
-        <!-- <div data-aos="fade-down" class="section-heading my-5">
-                <h1>2020 </h1>
-            </div> -->
         <div id="onlineHeading">
             <h1>Online tuition that raises grades</h1>
             <h3>Lessons to fit your schedule, from the comfort of home</h3>
@@ -740,14 +727,12 @@
         </div>
     </footer> -->
 
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script> -->
         <floating-btn></floating-btn>
-        <script src="../components/floatingBtn.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-</body>
+        <script src="components/floatingBtn.js"></script>
+
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </body>
+    <script src="js/navbar.js"></script>
 <script>
     AOS.init();
 </script>

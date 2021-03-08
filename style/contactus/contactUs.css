@@ -1,16 +1,8 @@
-form{
-    padding-top: 1%;
-    padding-bottom:1%;
-    background-color: white;
-    border-radius: 3%;
-}
-.details{
-    background-color: white;
-    border-radius: 3%;
-    margin-right: 10%;
-    padding-top: 1%;
-    padding-bottom:1%;
-}
+
 .space-arrow{
     margin-right: 3%;
+}
+
+.form-label{
+    color: #7c7e80;
 }

@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/table/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
     <title>Document</title>
 </head>
 <body>
     
   <div class="menu">
-    <a href="#" class="logo">
+    <a href="/" class="logo">
         <img src="http://www.ibacademics.com/wp-content/uploads/2019/07/LogoIBee.png"/>
     </a>
   <ul class="clearfix">
+	<li><a href="/">Home</a></li>
     <li class="drop-down-wrapper"><a href="#">IB Courses</a>
         <ul class="drop-down">
-          <li><a href="#">IB Chemistry</a></li>
-          <li><a href="#">IB Biology</a></li>
-          <li><a href="#">IB Physics</a></li>
+          <li><a href="/courses/chemistry.html">IB Chemistry</a></li>
+          <li><a href="/courses/biology.html">IB Biology</a></li>
+		  <li><a href="/courses/physics.html">IB Physics</a></li>
+		  <li><a href="/courses/english.html">IB English</a></li>
+          <li><a href="/courses/buisness.html">IB Buisness</a></li>
+          <li><a href="/courses/math.html">IB Math</a></li>
+          <li><a href="/courses/economic.html">IB Economic</a></li>
+		  <li><a href="/courses/tok.html">TOK</a></li>
+
         </ul>
       </li>
-    <li><a href="#">Home</a></li>
-    
+	  <li><a href="/contact us.html">Contact us</a></li>
+	  <li><a href="#">Resources</a></li>
+
   </ul>
 </div>
 </div>
@@ -35,7 +44,7 @@
 		  "use strict";
 		  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
 		  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-		  $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp;</a>");
+		  $(".menu > ul").before('<div class="menu-mobile"><i class="fas fa-bars fa-2x"></i></a>');
 		  $(".menu > ul > li").hover(function(e) {
 		    if ($(window).width() > 943) {
 		      $(this).children("ul").stop(true, false).fadeToggle(150);

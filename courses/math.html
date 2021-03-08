@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="../style/courses/courses.css" />
-    <link rel="stylesheet" href="../style/courses/matth.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link rel="stylesheet" href="../style/table/table.css" />
-    <link rel="stylesheet" href="../style/floatingBtn.css" />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body style="padding: 0; position: relative;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IB Mathematics | IB Acadmics</title>
+        <link rel="stylesheet" href="../style/courses/courses.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <link rel="stylesheet" href="../style/table/table.css" />
+        <link rel="stylesheet" href="../style/table/navbar.css" />
+        <link rel="stylesheet" href="../style/floatingBtn.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    
+    <body style="padding: 0; position: relative; overflow-x: hidden;">
+        <!-- navbar -->
+        <div class="menu">
+            <a href="/" class="logo">
+                <img src="http://www.ibacademics.com/wp-content/uploads/2019/07/LogoIBee.png" />
+            </a>
+            <ul class="clearfix">
+                <li><a href="/">Home</a></li>
+                <li class="drop-down-wrapper"><a href="#">IB Courses</a>
+                    <ul class="drop-down">
+                        <li><a href="/courses/chemistry.html">IB Chemistry</a></li>
+                        <li><a href="/courses/biology.html">IB Biology</a></li>
+                        <li><a href="/courses/physics.html">IB Physics</a></li>
+                        <li><a href="/courses/english.html">IB English</a></li>
+                        <li><a href="/courses/buisness.html">IB Buisness</a></li>
+                        <li><a href="/courses/math.html">IB Math</a></li>
+                        <li><a href="/courses/economic.html">IB Economic</a></li>
+                        <li><a href="/courses/tok.html">TOK</a></li>
+    
+                    </ul>
+                </li>
+                <li><a href="/contact us.html">Contact us</a></li>
+                <li><a href="#">Resources</a></li>
+    
+            </ul>
+        </div>
     <div class="hero-banner math-bg container-fluid">
         <div
             class="hero-banner-content h-100 d-flex  flex-column justify-content-center align-items-center text-center">
@@ -363,7 +385,8 @@
 
     
     <floating-btn></floating-btn>
-    <script src="../components/floatingBtn.js"></script>
 </body>
-
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../components/floatingBtn.js"></script>
 </html>

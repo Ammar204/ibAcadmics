@@ -30,33 +30,26 @@ a {
   display: none;
   padding: 20px;
 }
-.menu-mobile:after {
-  content: "\f394";
-  font-family: "Ionicons";
-  font-size: 2.5rem;
-  padding: 0;
-  float: right;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-}
+
 .menu-dropdown-icon:before {
-  content: "\f489";
+  content: "+";
   font-family: "Ionicons";
   display: none;
   cursor: pointer;
   float: right;
-  padding: 1.5em 2em;
+  padding-top: 20px;
   background: #fff;
   color: #333;
+  font-size: 25px;
+  font-weight: 900;
+  color: #4ecac2;
 }
 .menu > ul {
   list-style: none;
   position: relative;
-  padding-right: 25px;
   margin: 0;
   display: flex;
+  padding-bottom: 0;
 }
 .menu > ul:before,
 .menu > ul:after {
@@ -71,10 +64,12 @@ a {
   /* background: #e9e9e9; */
   padding: 0;
   margin: 0;
+  flex: none;
+  font-size: 18px;
 }
 .menu > ul > li a {
   text-decoration: none;
-  padding: 1.5em 3em;
+  padding: 1.5em 2em;
   display: block;
 }
 .menu > ul > li:hover > a {
@@ -131,8 +126,8 @@ a {
   margin-top: 5px;
 }
 .menu > ul > li > ul.normal-sub > li {
-  width: 80%;
-  margin-left: 45px;
+  width: 100%;
+  margin-left: 0;
 }
 .menu > ul > li > ul.normal-sub > li a {
   border: 0;
@@ -161,7 +156,9 @@ Mobile style's
   .menu-mobile {
     display: block;    
     float: right;    
-    padding: 20px 20px 0;
+    padding: 10px 0px;
+    color: #4ecac2;
+
   }
   .menu-dropdown-icon:before {
     display: block;
@@ -181,8 +178,8 @@ Mobile style's
     display: block;
   }
   .menu > ul > li > ul {
-    position: relative;    
-    padding: 0 40px;
+    position: relative;
+    padding: 0 0px 0px 20px;
   }
   .menu > ul > li > ul.normal-sub {
     width: 100%;
@@ -204,4 +201,19 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
+
+  .menu a.logo {
+    padding: 0;
+    width: 140px;
+}
+.menu{
+  padding: 10px 20px;
+  display: block;
+
+}
+.menu > ul > li > ul.normal-sub > li{
+  
+  width: 100%;
+  margin-left: 0;
+}
 }

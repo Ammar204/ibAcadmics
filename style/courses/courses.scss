@@ -72,6 +72,9 @@
 
 .text-size-md{
     font-size: 22px !important;
+    @media screen and (max-width:  550px) {
+        font-size: 16px !important;
+      }
 }
 
 .ques-section{
@@ -140,6 +143,25 @@
         .card-body{
             padding: 0px !important;
         }
+    }
+    @media screen and (max-width:  550px) {
+        .w-75{
+            width: 100% !important;
+        }
+        .best-tutor-card{
+            padding: 0 5px;
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+
+            .card-img-top{
+                width: 60%;
+                margin-bottom: 30px;
+            
+            }
+        }
+        
     }
 }
 
@@ -221,6 +243,12 @@
     }
     li.tutor::marker {
         color: $secondary; /* or whatever color you prefer */
+    }
+    @media screen and (max-width:  550px) {
+        li.tutor{
+            font-size: 14px;
+        }
+        
       }
 }
 

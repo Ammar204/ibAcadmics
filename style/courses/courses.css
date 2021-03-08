@@ -11442,6 +11442,12 @@ body {
   font-size: 22px !important;
 }
 
+@media screen and (max-width: 550px) {
+  .text-size-md {
+    font-size: 16px !important;
+  }
+}
+
 .ques-section .section-head-wrapper {
   margin-bottom: 4.6rem;
 }
@@ -11507,6 +11513,32 @@ body {
 
 .teacher-section .best-tutor-card .card-body {
   padding: 0px !important;
+}
+
+@media screen and (max-width: 550px) {
+  .teacher-section .w-75 {
+    width: 100% !important;
+  }
+  .teacher-section .best-tutor-card {
+    padding: 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teacher-section .best-tutor-card .card-img-top {
+    width: 60%;
+    margin-bottom: 30px;
+  }
 }
 
 .service-section .c-col-service {
@@ -11591,6 +11623,12 @@ body {
 .bullet-list li.tutor::marker {
   color: #edae44;
   /* or whatever color you prefer */
+}
+
+@media screen and (max-width: 550px) {
+  .bullet-list li.tutor {
+    font-size: 14px;
+  }
 }
 
 .jura-text {
