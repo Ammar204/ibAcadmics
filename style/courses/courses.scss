@@ -71,10 +71,14 @@
 }
 
 .text-size-md{
-    font-size: 22px !important;
+    font-size: 23px !important;
     @media screen and (max-width:  550px) {
         font-size: 16px !important;
       }
+}
+
+.letter-spacing{
+    letter-spacing: 0.4px;
 }
 
 .ques-section{
@@ -137,8 +141,15 @@
 .teacher-section{
     .best-tutor-card{
         border: 0px !important;
+        align-items: center;
+
+        p{
+            font-size: 24px;
+            font-family: $heading-text;
+            color: $secondary;
+        }
         .card-img-top{
-            width: 32%;
+            width: 38%;
         }
         .card-body{
             padding: 0px !important;
@@ -263,5 +274,5 @@
 
 
 .service-section .c-col-service.eco {
-    height: 325px;
+    height: 332px;
 }

@@ -11439,13 +11439,17 @@ body {
 }
 
 .text-size-md {
-  font-size: 22px !important;
+  font-size: 23px !important;
 }
 
 @media screen and (max-width: 550px) {
   .text-size-md {
     font-size: 16px !important;
   }
+}
+
+.letter-spacing {
+  letter-spacing: 0.4px;
 }
 
 .ques-section .section-head-wrapper {
@@ -11505,10 +11509,19 @@ body {
 
 .teacher-section .best-tutor-card {
   border: 0px !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teacher-section .best-tutor-card p {
+  font-size: 24px;
+  font-family: "Jura", sans-serif;
+  color: #edae44;
 }
 
 .teacher-section .best-tutor-card .card-img-top {
-  width: 32%;
+  width: 38%;
 }
 
 .teacher-section .best-tutor-card .card-body {
@@ -11640,6 +11653,6 @@ body {
 }
 
 .service-section .c-col-service.eco {
-  height: 325px;
+  height: 332px;
 }
 /*# sourceMappingURL=courses.css.map */
