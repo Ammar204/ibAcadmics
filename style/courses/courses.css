@@ -11345,7 +11345,7 @@ body {
 }
 
 .tes .card {
-  height: 300px;
+  height: 346px;
   margin-bottom: 20px;
 }
 
@@ -11403,7 +11403,7 @@ body {
 }
 
 .hero-banner {
-  background-color: #4ecac2;
+  background-color: #222;
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -11505,6 +11505,10 @@ body {
     font-size: 17px;
     width: 100% !important;
   }
+}
+
+.teacher-section {
+  height: 570px;
 }
 
 .teacher-section .best-tutor-card {
@@ -11659,8 +11663,8 @@ body {
 .courses-box {
   border-radius: 10px;
   background-color: #fffaea;
-  -webkit-box-shadow: 0px 2px 8px #dadada;
-          box-shadow: 0px 2px 8px #dadada;
+  -webkit-box-shadow: 0px 2px 8px #aaaaaa;
+          box-shadow: 0px 2px 8px #aaaaaa;
 }
 
 .courses-box h3, .courses-box .h3 {
@@ -11668,7 +11672,7 @@ body {
   font-weight: bold;
 }
 
-.courses-box .btn-outline-secondary {
+.courses-box .btn-primary {
   color: #fff;
   width: 110px;
 }
@@ -11681,5 +11685,82 @@ body {
   .courses-box {
     width: 90% !important;
   }
+}
+
+.menu > ul > li > ul.normal-sub {
+  margin-top: 85px !important;
+}
+
+@media screen and (max-width: 550px) {
+  .menu > ul > li > ul.normal-sub {
+    margin-top: 0px !important;
+  }
+}
+
+.igcse-feature {
+  height: 450px !important;
+}
+
+.sub-card {
+  height: 300px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 2px 8px #aaaaaa;
+          box-shadow: 0px 2px 8px #aaaaaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-card .sub-card-content {
+  width: 95%;
+  height: 280px;
+  border: 2px solid #4ecac2;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-card .sub-card-content .icon-wrapper {
+  margin-top: 50px;
+  height: 80px;
+  background: #4ecac2;
+  width: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #222;
+}
+
+.sub-card .sub-card-content h2, .sub-card .sub-card-content .h2 {
+  text-align: center;
+}
+
+.chart-row p {
+  font-size: 24px;
+}
+
+.chart-row h2, .chart-row .h2 {
+  font-size: 3rem;
 }
 /*# sourceMappingURL=courses.css.map */
