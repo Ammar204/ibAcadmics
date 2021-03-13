@@ -256,7 +256,10 @@ code {
   color: #d63384;
   word-wrap: break-word;
 }
-
+a {
+  text-decoration: none;
+  line-height: inherit;
+}
 a > code {
   color: inherit;
 }
